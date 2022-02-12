@@ -23,7 +23,7 @@ def main():
 		open("res/%d.jpg"%index, "wb+").write(get(l).content)
 	'''
 	for index, l in enumerate(links):
-		Thread(target=lambda idx, lk:open("res/%d.jpg" % idx, "wb+") \
+		Thread(target=lambda idx, lk:open("res/zhengzhi/%d.jpg" % idx, "wb+") \
 					.write(get(lk).content),
 				args=(index, l)).start()
 	#'''
